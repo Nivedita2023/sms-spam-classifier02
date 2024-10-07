@@ -13,6 +13,7 @@ def transform_text(text):
     text = text.lower()
 
     nltk.download('punkt_tab')
+    nltk.download('stopwords')
 
     # tokenize the word
     text = nltk.word_tokenize(text)
